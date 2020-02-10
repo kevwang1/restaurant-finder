@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <link rel='stylesheet' type='text/css' href='styles.css'>
+  <script src='https://d3js.org/d3.v5.min.js'></script>
+  <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+  <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+  <script src="https://d3js.org/d3-drag.v1.min.js"></script>
+  <script src="https://d3js.org/d3-color.v1.min.js"></script>
+  <script src="https://d3js.org/d3-ease.v1.min.js"></script>
+  <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+  <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+  <script src="https://d3js.org/d3-timer.v1.min.js"></script>
+  <script src="https://d3js.org/d3-transition.v1.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="slidecontainer">
+      <text class="radius1">Radius 1: </text>
+      <text class="radius1" id="radius1">8.0 miles</text>
+      <br>
+      <input type="range" min="1" max="100" value="100" class="slider" id="slider1">
+      <text id="slider1"></text>
+    </div>
+    <div class="slidecontainer">
+      <text class="radius2">Radius 2: </text>
+      <text class="radius2" id="radius2">8.0 miles</text>
+      <br>
+      <input type="range" min="1" max="100" value="100" class="slider" id="slider2">
+    </div>
+    <div class="slidecontainer">
+      <text>Minimum Score: </text>
+      <text id="minscore">0</text>
+      <br>
+      <input type="range" min="0" max="100" value="0" class="slider" id="slider3">
+      <text id="slider3"></text>
+    </div>
+  </div>
+  <div class="container">
+    <div class="shadow" id="vis">
+
+    </div>
+  </div>
+
+</body>
+
+<script src='visualization.js'></script>
+
+</html>
